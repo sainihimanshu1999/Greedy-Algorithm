@@ -8,8 +8,8 @@ def smallestRange(self,nums,k):
     result = nums[-1]-nums[0]
 
     for i in range(len(nums)-1):
-        max_num = max(A[-1],A[i]+2*k)
-        min_num = min(A[i+1],A[0]+2*k)
+        max_num = max(nums[-1],nums[i]+2*k)
+        min_num = min(nums[i+1],nums[0]+2*k)
         result  = min(result,max_num-min_num)
 
     return result
