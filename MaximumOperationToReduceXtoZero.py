@@ -13,7 +13,7 @@ def minimumOperations(self,nums,x):
 
     right = 0
     ans = n+1
-    for i in range(n)[::-1]:
+    for i in range(n,-1,-1):
         if i>0: right += nums[i]
         left = x- right
         if left in dic:
